@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  font-weight:bold;
+}
+html,
+body {
+  
+  height: 100%;
+  
+}
+.wrapper {
+  width: 150px;
+ 
+  background: #ffffff;
+  border-radius: 10px;
+  
+}
+.wrapper .box {
+  
+  padding: 5px 5px;
+  width: 100%;
+  height:fit-content;
+  background: #ffffff;
+  border-radius: 10px;
+}
+.wrapper .box label {
+  display: flex;
+  
+  height: 20px;
+  width: 90%;
+  align-items: center;
+  border: 1px solid lightgrey;
+  border-radius: 50px;
+  margin: 7px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+}
+.wrapper .box label .dot {
+  height: 20px;
+  width: 20px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  position: relative;
+}
+.box label .dot::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(2);
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+#option-1:checked ~ .option-1 .dot::before,
+#option-2:checked ~ .option-2 .dot::before,
+#option-3:checked ~ .option-3 .dot::before,
+#option-4:checked ~ .option-4 .dot::before,
+#option-5:checked ~ .option-5 .dot::before,
+#option-6:checked ~ .option-6 .dot::before,
+#option-7:checked ~ .option-7 .dot::before,
+#option-8:checked ~ .option-8 .dot::before,
+#option-9:checked ~ .option-9 .dot::before,
+#option-10:checked ~ .option-10 .dot::before,
+#option-11:checked ~ .option-11 .dot::before,
+#option-12:checked ~ .option-12 .dot::before,
+#option-13:checked ~ .option-13 .dot::before,
+#option-14:checked ~ .option-14 .dot::before,
+#option-15:checked ~ .option-15 .dot::before,
+#option-16:checked ~ .option-16 .dot::before,
+#option-17:checked ~ .option-17 .dot::before,
+#option-18:checked ~ .option-18 .dot::before,
+#option-19:checked ~ .option-19 .dot::before,
+#option-20:checked ~ .option-20 .dot::before,
+#option-21:checked ~ .option-21 .dot::before,
+#option-22:checked ~ .option-22 .dot::before,
+#option-23:checked ~ .option-23 .dot::before,
+#option-24:checked ~ .option-24 .dot::before,
+#option-25:checked ~ .option-25 .dot::before,
+#option-26:checked ~ .option-26 .dot::before,
+#option-27:checked ~ .option-27 .dot::before,
+#option-28:checked ~ .option-28 .dot::before,
+#option-29:checked ~ .option-29 .dot::before,
+#option-30:checked ~ .option-30 .dot::before,
+#option-31:checked ~ .option-31 .dot::before,
+#option-32:checked ~ .option-32 .dot::before  {
+  background: #1fb939;
+  transform: translate(-50%, -50%) scale(1);
+}
+.wrapper .box label .text {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #d32727;
+  font-size: 12px;
+  font-weight:bold;
+  padding-left: 10px;
+  transition: color 0.3s ease;
+}
+#option-2:checked ~ .option-2,
+#option-3:checked ~ .option-3,
+#option-1:checked ~ .option-1,
+#option-4:checked ~ .option-4,
+#option-5:checked ~ .option-5,
+#option-6:checked ~ .option-6,
+#option-7:checked ~ .option-7,
+#option-8:checked ~ .option-8,
+#option-9:checked ~ .option-9,
+#option-10:checked ~ .option-10,
+#option-11:checked ~ .option-11,
+#option-12:checked ~ .option-12,
+#option-13:checked ~ .option-13,
+#option-14:checked ~ .option-14,
+#option-15:checked ~ .option-15,
+#option-16:checked ~ .option-16,
+#option-17:checked ~ .option-17,
+#option-18:checked ~ .option-18,
+#option-19:checked ~ .option-19,
+#option-20:checked ~ .option-20,
+#option-21:checked ~ .option-21,
+#option-22:checked ~ .option-22,
+#option-23:checked ~ .option-23,
+#option-24:checked ~ .option-24,
+#option-25:checked ~ .option-25,
+#option-26:checked ~ .option-26,
+#option-27:checked ~ .option-27,
+#option-28:checked ~ .option-28,
+#option-29:checked ~ .option-29,
+#option-30:checked ~ .option-30,
+#option-31:checked ~ .option-31,
+#option-32:checked ~ .option-32  {
+  background: #5372ac;
+  border-color: #5372ac;
+}
+
+#option-1:checked ~ .option-1 .text,
+#option-2:checked ~ .option-2 .text,
+#option-3:checked ~ .option-3 .text,
+#option-4:checked ~ .option-4 .text,
+#option-5:checked ~ .option-5 .text,
+#option-6:checked ~ .option-6 .text,
+#option-7:checked ~ .option-7 .text,
+#option-8:checked ~ .option-8 .text,
+#option-9:checked ~ .option-9 .text,
+#option-10:checked ~ .option-10 .text,
+#option-11:checked ~ .option-11 .text,
+#option-12:checked ~ .option-12 .text,
+#option-13:checked ~ .option-13 .text,
+#option-14:checked ~ .option-14 .text,
+#option-15:checked ~ .option-15 .text,
+#option-16:checked ~ .option-16 .text,
+#option-17:checked ~ .option-17 .text,
+#option-18:checked ~ .option-18 .text,
+#option-19:checked ~ .option-19 .text,
+#option-20:checked ~ .option-20 .text,
+#option-21:checked ~ .option-21 .text,
+#option-22:checked ~ .option-22 .text,
+#option-23:checked ~ .option-23 .text,
+#option-24:checked ~ .option-24 .text,
+#option-25:checked ~ .option-25 .text,
+#option-26:checked ~ .option-26 .text,
+#option-27:checked ~ .option-27 .text,
+#option-28:checked ~ .option-28 .text,
+#option-29:checked ~ .option-29 .text,
+#option-30:checked ~ .option-30 .text,
+#option-31:checked ~ .option-31 .text,
+#option-32:checked ~ .option-32 .text {
+  color: #fff;
+}
+.wrapper .box input[type="checkbox"]{
+    display: none;
+}
+.wrapper .box input[type="radio"]{
+  display: none;
+}

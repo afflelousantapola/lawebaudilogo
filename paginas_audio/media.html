@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es" style="margin: 0; padding: 0; box-sizing: border-box">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>MEDIA</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/gradient-navbar-styles.css" />
+    <link rel="stylesheet" href="assets/css/gradient-navbar.css" />
+    <link rel="stylesheet" href="assets/css/Login-Animate.css" />
+
+    <link rel="stylesheet" href="/sistema_auditivo.css" />
+  </head>
+
+  <body
+    style="
+      overflow: hidden;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: rgb(255, 255, 255);
+    "
+  >
+  <div class="nav">
+<img class="logo" src="/assets/img/logo.png" alt="logo">
+
+
+  </div>
+
+    <div class="caja">
+      <div class="sistemaAudi">
+        <img id="sistAudiEspañol" class="afau" src="/assets/img/SAESPAÑOL.png" alt="">
+        <img id="sistAudiIngles" class="afau2" src="/assets/img/SAINGLES.png" alt="">
+        <img id="sistAudiFrances" class="afau3" src="/assets/img/SAFRANCES.png" alt="">
+      </div>
+      <div class="perdidaAudi">
+        <img id="perdidaEsp" class="afau" src="/assets/img/PREDIDAESP.png" alt="">
+
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="tele">
+    <video id="reproductor" src="/videos/SISTEMA AUDITIVO.mp4" type="video/mp4"  class="sa" controls></video>
+  </div>
+
+
+<script>
+let sistEspañol = document.getElementById("sistAudiEspañol");
+let sistIngles = document.getElementById("sistAudiIngles");
+let sistFrances = document.getElementById("sistAudiFrances");
+let predidaEsp = document.getElementById("perdidaEsp")
+let repro = document.getElementById("reproductor");
+
+sistEspañol.onclick = function(){
+  repro.src = "/videos/SISTEMA AUDITIVO.mp4";
+  repro.play();
+}
+sistIngles.onclick = function(){
+  repro.src = "/videos/SISTEMA AUDITIVO INGLES.mp4";
+  repro.play();
+}
+sistFrances.onclick = function(){
+  repro.src = "/videos/SISTEMA AUDITIVO FRANCES.mp4";
+  repro.play();
+}
+predidaEsp.onclick = function(){
+  repro.src = "/videos/PERDIDA.mp4";
+  repro.play();
+}
+
+</script>
+
+
+  </body>
+</html>

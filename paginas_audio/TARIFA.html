@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/tarifa.css">
+    <link rel="stylesheet" href="/pruebas copy.css">
+    <script src="/assets/js/tarifa.js"></script>
+    <title>TARIFA</title>
+</head>
+
+<body onload="invisible()">
+
+    <!-- logo -->
+    <div class="logo">
+        <img class="logotipo" src="/assets/img/logo.png" alt="">
+    </div>
+
+    <!-- tt1 -->
+    <div class="contenedor">
+        <div class="tarjetaequipo" onclick="visi_eq1()">
+            <h1>Elige el equipo</h1>
+            <h1>nº 1</h1>
+        </div>
+        
+        <div class="contenedor" id="equipo1">
+
+            <div class="tarjeta1">
+                <div class="foto">
+                    <img class="model" src="/assets/img/Incognito copia.png" alt="">
+                </div>
+    
+                <div class="wrapper">
+                    <div class="box">
+                        <input  onclick="precios()" type="radio" name="select" id="option-1">
+                        <input onclick="precios()" type="radio" name="select" id="option-2">
+                        <input onclick="precios()" type="radio" name="select" id="option-3">
+                        <label   for="option-1" class="option-1">
+                            <div class="dot"></div>
+                            <div class="text">IC6</div>
+                        </label>
+                        <label  for="option-2" class="option-2">
+                            <div class="dot"></div>
+                            <div class="text">IC8</div>
+                        </label>
+                        <label  for="option-3" class="option-3">
+                            <div class="dot"></div>
+                            <div class="text">IC16</div>
+                        </label>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="tarjeta1" id="equipo1">
+                <div class="foto">
+                    <img class="model" src="/assets/img/QUIX.png" alt="">
+                </div>
+                <div class="wrapper">
+                    <div class="box">
+                        <input onclick="precios()" type="radio" name="select" id="option-4">
+                        <input onclick="precios()" type="radio" name="select" id="option-5">
+                        <input onclick="precios()" type="radio" name="select" id="option-6">
+    
+                        <label for="option-4" class="option-4">
+                            <div class="dot"></div>
+                            <div class="text">Q6</div>
+                        </label>
+                        <label for="option-5" class="option-5">
+                            <div class="dot"></div>
+                            <div class="text">Q8</div>
+                        </label>
+                        <label for="option-6" class="option-6">
+                            <div class="dot"></div>
+                            <div class="text">Q16</div>
+                        </label>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="tarjeta1" id="equipo1">
+                <div class="foto">
+                    <img class="model" src="/assets/img/INTRACANAL.png" alt="">
+                </div>
+                <div class="wrapper">
+                    <div class="box">
+                        <input onclick="precios()" type="radio" name="select" id="option-7">
+                        <input onclick="precios()" type="radio" name="select" id="option-8">
+                        <input onclick="precios()" type="radio" name="select" id="option-9">
+                        <label for="option-7" class="option-7">
+                            <div class="dot"></div>
+                            <div class="text">R1200</div>
+                        </label>
+                        <label for="option-8" class="option-8">
+                            <div class="dot"></div>
+                            <div class="text">R1600</div>
+                        </label>
+                        <label for="option-9" class="option-9">
+                            <div class="dot"></div>
+                            <div class="text">R2400</div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="tarjeta1" id="equipo1">
+                <div class="foto">
+                    <img class="model" src="/assets/img/ACTIVE.png" alt="">
+                </div>
+                <div class="wrapper">
+                    <div class="box">
+                        <input onclick="precios()" type="radio" name="select" id="option-10">
+                        <input onclick="precios()" type="radio" name="select" id="option-11">
+    
+                        <label for="option-10" class="option-10">
+                            <div class="dot"></div>
+                            <div class="text">ACTIVE</div>
+                        </label>
+                        <label for="option-11" class="option-11">
+                            <div class="dot"></div>
+                            <div class="text">AC-PRO</div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="tarjeta1" id="equipo1">
+                <div class="foto">
+                    <img class="model" src="/assets/img/BTE.png" alt="">
+                </div>
+                <div class="wrapper">
+                    <div class="box">
+                        <input onclick="precios()" type="radio" name="select" id="option-12">
+                        <input onclick="precios()" type="radio" name="select" id="option-13">
+                        <input onclick="precios()" type="radio" name="select" id="option-14">
+                        <label for="option-12" class="option-12">
+                            <div class="dot"></div>
+                            <div class="text">NIVEL8</div>
+                        </label>
+                        <label for="option-13" class="option-13">
+                            <div class="dot"></div>
+                            <div class="text">NIVEL12</div>
+                        </label>
+                        <label for="option-14" class="option-14">
+                            <div class="dot"></div>
+                            <div class="text">NIVEL16</div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="tarjeta1" id="equipo1">
+                <div class="foto">
+                    <img class="model" src="/assets/img/STARKEY.png" alt="">
+                </div>
+                <div class="wrapper">
+                    <div class="box">
+                        <input onclick="precios()" type="radio" name="select" id="option-15">
+    
+    
+                        <label for="option-15" class="option-15">
+                            <div class="dot"></div>
+                            <div class="text">STARKEY</div>
+                        </label>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="tarjeta1" id="equipo1">
+                <div class="foto">
+                    <img class="model" src="/assets/img/STILINE.png" alt="">
+                </div>
+                <div class="wrapper">
+                    <div class="box">
+                        <input onclick="precios()" type="radio" name="select" id="option-16">
+                        <label for="option-16" class="option-16">
+                            <div class="dot"></div>
+                            <div class="text">BT16</div>
+                        </label>
+                        
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- tt2 -->
+
+
+    <div class="contenedor2">
+
+        <div class="contenedor">
+            <div class="tarjetaequipo" onclick="visi_eq2()" id="alain">
+                <img class="cartel" src="/assets/img/cartel.jpg" alt="">
+                <h1>Elige el equipo</h1>
+                <h1>nº2</h1>
+            </div>
+        </div>
+        <div class="contenedor2" id="equipo2">
+            <div class="tarjeta2">
+                <div class="foto">
+                    <img class="model" src="/assets/img/Incognito copia.png" alt="">
+                </div>
+    
+                <div class="wrapper">
+                    <div class="box">
+                        <input onclick="precios2()" type="radio" name="tt" id="option-17">
+                        <input onclick="precios2()" type="radio" name="tt" id="option-18">
+                        <input onclick="precios2()" type="radio" name="tt" id="option-19">
+
+                        <label id="ic6" for="option-17" class="option-17">
+                            <div class="dot"></div>
+                            <div class="text">IC6</div>
+                        </label>
+
+                        <label for="option-18" class="option-18">
+                            <div class="dot"></div>
+                            <div class="text">IC8</div>
+                        </label>
+                        <label for="option-19" class="option-19">
+                            <div class="dot"></div>
+                            <div class="text">IC16</div>
+                        </label>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="tarjeta2">
+                <div class="foto">
+                    <img class="model" src="/assets/img/QUIX.png" alt="">
+                </div>
+                <div class="wrapper">
+                    <div class="box">
+                        <input onclick="precios2()" type="radio" name="tt" id="option-20">
+                        <input onclick="precios2()" type="radio" name="tt" id="option-21">
+                        <input onclick="precios2()" type="radio" name="tt" id="option-22">
+    
+                        <label id="Q6" for="option-20" class="option-20">
+                            <div class="dot"></div>
+                            <div class="text">Q6</div>
+                        </label>
+                        <label for="option-21" class="option-21">
+                            <div class="dot"></div>
+                            <div class="text">Q8</div>
+                        </label>
+                        <label for="option-22" class="option-22">
+                            <div class="dot"></div>
+                            <div class="text">Q16</div>
+                        </label>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="tarjeta2">
+                <div class="foto">
+                    <img class="model" src="/assets/img/INTRACANAL.png" alt="">
+                </div>
+                <div class="wrapper">
+                    <div class="box">
+                        <input onclick="precios2()" type="radio" name="tt" id="option-23">
+                        <input onclick="precios2()" type="radio" name="tt" id="option-24">
+                        <input onclick="precios2()" type="radio" name="tt" id="option-25">
+                        <label onclick="precios2()" for="option-23" class="option-23">
+                            <div class="dot"></div>
+                            <div class="text">R1200</div>
+                        </label>
+                        <label for="option-24" class="option-24">
+                            <div class="dot"></div>
+                            <div class="text">R1600</div>
+                        </label>
+                        <label for="option-25" class="option-25">
+                            <div class="dot"></div>
+                            <div class="text">R2400</div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="tarjeta2">
+                <div class="foto">
+                    <img class="model" src="/assets/img/ACTIVE.png" alt="">
+                </div>
+                <div class="wrapper">
+                    <div class="box">
+                        <input onclick="precios2()" type="radio" name="tt" id="option-26">
+                        <input onclick="precios2()" type="radio" name="tt" id="option-27">
+    
+                        <label for="option-26" class="option-26">
+                            <div class="dot"></div>
+                            <div class="text">ACTIVE</div>
+                        </label>
+                        <label for="option-27" class="option-27">
+                            <div class="dot"></div>
+                            <div class="text">AC-PRO</div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="tarjeta2">
+                <div class="foto">
+                    <img class="model" src="/assets/img/BTE.png" alt="">
+                </div>
+                <div class="wrapper">
+                    <div class="box">
+                        <input onclick="precios2()" type="radio" name="tt" id="option-28">
+                        <input onclick="precios2()" type="radio" name="tt" id="option-29">
+                        <input onclick="precios2()" type="radio" name="tt" id="option-30">
+                        <label for="option-28" class="option-28">
+                            <div class="dot"></div>
+                            <div class="text">NIVEL8</div>
+                        </label>
+                        <label for="option-29" class="option-29">
+                            <div class="dot"></div>
+                            <div class="text">NIVEL12</div>
+                        </label>
+                        <label for="option-30" class="option-30">
+                            <div class="dot"></div>
+                            <div class="text">NIVEL16</div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="tarjeta2">
+                <div class="foto">
+                    <img class="model" src="/assets/img/STARKEY.png" alt="">
+                </div>
+                <div class="wrapper">
+                    <div class="box">
+                        <input onclick="precios2()" type="radio" name="tt" id="option-31">
+    
+    
+                        <label for="option-31" class="option-31">
+                            <div class="dot"></div>
+                            <div class="text">STARKEY</div>
+                        </label>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="tarjeta2">
+                <div class="foto">
+                    <img class="model" src="/assets/img/STILINE.png" alt="">
+                </div>
+                <div class="wrapper">
+                    <div class="box">
+                        <input onclick="precios2()" type="radio" name="tt" id="option-32">
+    
+    
+                        <label for="option-32" class="option-32">
+                            <div class="dot"></div>
+                            <div class="text">BT16</div>
+                        </label>
+    
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+
+    </div>
+    <div class="contenedor3">
+        <div class="cuenta" id="cuentas">
+            <label for="" class="mila">PVP Equipo 1</label>
+            <input class="numeral" type="text" id="valor1">
+            <label for="" class="mila">PVP Tchin Tchin</label>
+            <input class="numeral" type="text" id="valor2">
+            <label for="" class="mila">TOTAL</label>
+            <input class="numeral" type="text" id="total">
+            <img id="nextyear" src="/assets/img/NY.png" alt="">
+            <label for="" class="milapiper">48 MESES</label>
+            <input class="numeral" type="text" id="48" value="0">
+        </div>
+
+    </div>
+
+
+
+    <!-- totales -->
+
+
+
+
+
+
+    <!-- funciones-->
+
+
+
+</body>
+
+</html>

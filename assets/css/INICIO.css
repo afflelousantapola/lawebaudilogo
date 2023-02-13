@@ -1,0 +1,63 @@
+body{
+    top: 0;
+
+    overflow: hidden;
+    font-family: 'Poppins',sans-serif;
+
+    align-items: center;
+}
+#fondo{
+    position:absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -5;
+    opacity: 0.5;
+}
+.principal{
+    display: grid;
+    place-content: center;
+
+    height: 95vh;
+}
+
+.contenedor{
+    
+    margin-top: 10px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 70px;
+
+}
+img{
+    width: 800px;
+}
+.letras{
+
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+    height: max-content;
+}
+.letras2{
+
+
+
+    margin-left: 600px;
+    align-items: center;
+}
+button{
+width: max-content;
+padding: 10px;
+border: 1px solid lightpink;
+border-radius: 5px;
+cursor: pointer;
+}
+button:hover{
+    background: lightskyblue;
+}
+a{
+    text-decoration: none;
+}

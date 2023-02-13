@@ -1,0 +1,15 @@
+.large {
+	width: 200px; height: 200px;
+	position: absolute;
+	border-radius: 100%;
+	border: 1px solid red;
+	
+	/*Multiple box shadows to achieve the glass effect*/
+
+	
+	/*Lets load up the large image first*/
+	background: url('/assets/img/colorquix_jpg.jpg') no-repeat;
+	
+	/*hide the glass by default*/
+	display: none;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es" style="margin: 0; padding: 0; box-sizing: border-box">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    
+    <title>EXAMEN</title>
+    <link rel="stylesheet" href="/EXAMEN.css" />
+</head>
+
+<body style="
+      overflow: hidden;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: rgb(255, 255, 255);
+    ">
+    <div class="nav">
+        <img class="logo" src="/assets/img/logo.png" alt="logo">
+    </div>
+    <audio id="audio">
+        <source src="/VIDEOTOSCOPIA.wav" type="audio/mpeg">
+    </audio>
+    <audio id="audio2">
+        <source src="/timpano.wav" type="audio/mpeg">
+    </audio>
+    <audio id="audio3">
+        <source src="/audiometria.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="audio4">
+        <source src="/osea.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="audio5">
+        <source src="/umbral.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="audio6">
+        <source src="/logoaudio.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="container">
+
+        <div class="container">
+
+        <div class="card" onclick="playPause()" ondblclick="stop()">
+            <div class="par">
+                <h3>1</h3>
+            </div>
+            <figure class="fig">
+                <img src="/assets/img/VIDEOTOSCOPIO.png" />
+            </figure>
+            <div class="par">
+                <h3>VIDEOTOSCOPIA</h3>
+            </div>
+            <div class="contenido">
+                <P>La videotoscopia es un tipo de prueba auditiva que sirve para evaluar el oído. Se trata de un
+                    análisis rutinario que se puede llevar a cabo en cualquier centro de salud, en un ambulatorio o en
+                    nuestro Centro Auditivo.</P>
+                    
+            </div>
+
+        </div>
+
+        <div class="card" onclick="playPause2()" ondblclick="stop2()" >
+            <div class="par">
+                <h3>2</h3>
+            </div>
+            <figure class="fig">
+                <img src="/assets/img/TIMPANOMETRIA.png" />
+            </figure>
+            <div class="par">
+                <h3>TIMPANOMETRIA</h3>
+            </div>
+            <div class="contenido">
+                <P>La timpanometría o impedanciometría se utiliza para comprobar la impedancia acústica, es decir, para
+                    saber con mayor exactitud qué dificultad tiene el movimiento vibratorio para atravesar el oído
+                    medio.</P>
+            </div>
+
+        </div>
+        <div class="card" onclick="playPause3()" ondblclick="stop3()" >
+            <div class="par">
+                <h3>3</h3>
+            </div>
+            <figure class="fig">
+                <img src="/assets/img/AUDIOMETRIA.png" />
+            </figure>
+            <div class="par">
+                <h3>AUDIOMETRIA AEREA</h3>
+            </div>
+            <div class="contenido">
+                <P>La audiometría tonal liminal o audiometría de tonos puros es una de las pruebas complementarias que
+                    sirve para explorar el grado de audición.
+                    Realiza una evaluación cualitativa y cuantitativa de la audición, así como valora de forma rápida y
+                    eficaz la capacidad auditiva
+                    
+                </P>
+            </div>
+            
+        </div>
+    </div>
+    
+
+</div>
+<div class="container">
+
+
+    <div class="card" onclick="playPause4()" ondblclick="stop4()" >
+        <div class="par">
+            <h3>4</h3>
+        </div>
+        <figure class="fig">
+            <img src="/assets/img/OSEA.png" />
+        </figure>
+        <div class="par">
+            <h3>AUDIOMETRIA OSEA</h3>
+        </div>
+        <div class="contenido">
+            <P>A diferencia de la audiometría tonal liminar por vía aérea, la audiometría ósea profundiza más en la
+                parte interna del oído para detectar posibles lesiones en la cóclea o sistema nervioso.</P>
+        </div>
+    </div>
+    <div class="card" onclick="playPause5()" ondblclick="stop5()" >
+        <div class="par">
+            <h3>5</h3>
+        </div>
+        <figure class="fig">
+            <img src="/assets/img/UMBRAL.png" />
+        </figure>
+        <div class="par">
+            <h3>UMBRAL DISCONFORT</h3>
+        </div>
+        <div class="contenido">
+            <P>El umbral de disconfort o UCL (m) es la intensidad máxima de sonido que puede soportar un paciente,
+                mientras que el umbral de confort o MCL (M) es aquella intensidad de sonido a la cual el paciente
+                oye con comodidad. Ambos son muy útiles en adaptación protésica.</P>
+        </div>
+    </div>
+    <div class="card" onclick="playPause6()" ondblclick="stop6()" >
+        <div class="par">
+            <h3>6</h3>
+        </div>
+        <figure class="fig">
+            <img src="/assets/img/LOGOAUDIOMETRIA.png" />
+        </figure>
+        <div class="par">
+            <h3>LOGOAUDIOMETRIA</h3>
+        </div>
+        <div class="contenido">
+            <P>Las pruebas de logoaudiometría o audiometría verbal, evalúan la capacidad auditiva del paciente para
+                comprender la palabra hablada.</P>
+        </div>
+    </div>
+
+
+
+
+
+
+</div>
+
+    <script src="/assets/js/audios_pruebas.js"></script>
+
+</body>
+
+</html>

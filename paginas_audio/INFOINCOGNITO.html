@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/pruebalupa.css">
+    <script src="/assets/js/lupa.js"></script>
+    <title>INCOGNITO</title>
+</head>
+
+<body>
+    <div class="nav">
+        <img class="logo" src="/assets/img/logo.png" alt="logo">
+    </div>
+    <div class="principal">
+        <div class="fotomodel">
+            <div class="imagen">
+                <img class="model" src="/assets/img/Incognito copia.png" alt="">
+            </div>
+
+            <div>
+                <div style="display: flex;justify-content: center;align-items: center;">
+                    <h2 class="oro">GAMA ORO IC6</h2>
+                </div>            
+                <p>Comodidad en ambientes tranquilos</p>
+                <p>Funciona con baterias externas</p>
+            </div>
+            <div>
+                <div style="display: flex;justify-content: center;align-items: center;">
+                    <h2 class="platino">GAMA PLATINO IC8</h2>
+                </div> 
+
+                <p>Recargables</p>
+                <p>Captación bilateral del sonido</p>
+                <p>Conectividad con dispositivos digitales</p>
+            </div>
+            <div>
+                <div style="display: flex;justify-content: center;align-items: center;">
+                    <h2 class="diamante">GAMA DIAMANTE IC16</h2>
+                </div> 
+                <p>Recargables</p>
+                <p>Captación bilateral del sonido</p>
+                <p>Conectividad con dispositivos digitales</p>
+            </div>
+            
+            <div class="magnify">
+                <div class="large"></div>
+                <div>
+                    <img class="small" src="/assets/img/colorincog.png"/>
+                </div>
+
+                </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        
+            var native_width = 0;
+            var native_height = 0;
+        
+            //Now the mousemove function
+            $(".magnify").mousemove(function(e){
+                //When the user hovers on the image, the script will first calculate
+                //the native dimensions if they don't exist. Only after the native dimensions
+                //are available, the script will show the zoomed version.
+                if(!native_width && !native_height)
+                {
+                    //This will create a new image object with the same image as that in .small
+                    //We cannot directly get the dimensions from .small because of the 
+                    //width specified to 200px in the html. To get the actual dimensions we have
+                    //created this image object.
+                    var image_object = new Image();
+                    image_object.src = $(".small").attr("src");
+                    
+                    //This code is wrapped in the .load function which is important.
+                    //width and height of the object would return 0 if accessed before 
+                    //the image gets loaded.
+                    native_width = image_object.width;
+                    native_height = image_object.height;
+                }
+                else
+                {
+
+                    var magnify_offset = $(this).offset();
+
+                    var mx = e.pageX - magnify_offset.left;
+                    var my = e.pageY - magnify_offset.top;
+                    
+
+                    if(mx < $(this).width() && my < $(this).height() && mx > 0 && my > 0)
+                    {
+                        $(".large").fadeIn(100);
+                    }
+                    else
+                    {
+                        $(".large").fadeOut(100);
+                    }
+                    if($(".large").is(":visible"))
+                    {
+
+                        var rx = Math.round(mx/$(".small").width()*native_width - $(".large").width()/2)*-1;
+                        var ry = Math.round(my/$(".small").height()*native_height - $(".large").height()/2)*-1;
+                        var bgp = rx + "px " + ry + "px";
+                        
+
+                        var px = mx - $(".large").width()/2;
+                        var py = my - $(".large").height()/2;
+
+                        $(".large").css({left: px, top: py, backgroundPosition: bgp});
+                    }
+                }
+            })
+        })
+        </script>
+</body>
+
+</html>

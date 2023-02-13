@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <script src="/assets/js/jspdf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/signature_pad@4.0.0/dist/signature_pad.umd.min.js"></script>
+    <script src="/assets/js/app.js"></script>
+    <script src="/assets/js/jspdf.min.js"></script>
+    <title>ANAMNESIS</title>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h3>Anamnesis</h3>
+                <hr>
+                <br>
+                <h3>Datos del paciente</h3>
+                <form id="form">
+                    <div class="row mb-3">
+                        <div class="col-md-6"> <!-- NOMBRE -->
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre">
+                        </div>
+                        <div class="col-md-6"><!-- APELLIDOS -->
+                            <label for="apellidos" class="form-label">Apellidos</label>
+                            <input type="text" class="form-control" id="apellidos">
+                        </div>
+                        <div class="col-md-6"><!-- DOMICILIO -->
+                            <label for="domicilio" class="form-label">Domicilio</label>
+                            <input type="text" class="form-control" id="domicilio">
+                        </div>
+                        <div class="col-md-6"><!-- CP -->
+                            <label for="codigopostal" class="form-label">C.P.</label>
+                            <input type="text" class="form-control" id="codigopostal">
+                        </div>
+                        <div class="col-md-6"><!-- POBLACION -->
+                            <label for="poblacion" class="form-label">Población</label>
+                            <input type="text" class="form-control" id="poblacion">
+                        </div>
+                        <div class="col-md-6"><!-- PROVINCIA -->
+                            <label for="provincia" class="form-label">Provincia</label>
+                            <input type="text" class="form-control" id="provincia">
+                        </div>
+                        <div class="col-md-6"><!-- TELEFONO -->
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input type="text" class="form-control" id="telefono">
+                        </div>
+                        <div class="col-md-6"><!-- MOVIL -->
+                            <label for="movil" class="form-label">Teléfono Móvil</label>
+                            <input type="text" class="form-control" id="movil">
+                        </div>
+                        <div class="col-md-6"><!-- EMAIL -->
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="col-md-6"><!-- NACIMIENTO -->
+                            <label for="nacimiento" class="form-label">Fecha de nacimiento</label>
+                            <input type="date" class="form-control" id="nacimiento">
+                        </div>
+                        <div class="col-md-6"><!-- DNI -->
+                            <label for="dni" class="form-label">DNI</label>
+                            <input type="text" class="form-control" id="dni">
+                        </div>
+                        <div class="col-md-10"><!-- OBSERVACIONES -->
+                            <label for="observaciones" class="form-label">Observaciones</label>
+                            <input type="text" class="form-control" id="observaciones"><br>
+                        </div>
+
+                        <div>
+                            <h3>Historia Auditiva</h3>
+                        </div>
+                        <div class="col-md-5">
+
+
+                            <div>
+                                <label for="cita" class="form-label">¿Como ha pedido la cita?</label>
+                                <select class="form-select" name="" id="">
+                                    <option value="">Seleccionar</option>
+                                    <option value="whatsapp">Whatsapp</option>
+                                    <option value="telefono">Teléfono</option>
+                                    <option value="derivacion">Derivación tienda</option>
+                                    <option value="familiar">Recomienda un familiar</option>
+                                </select>
+
+                                <label for="motivo" class="form-label">¿Cuándo fue su ultima revisión auditiva?</label>
+                                <select class="form-select" name="" id="">
+                                    <option value="">Seleccionar</option>
+                                    <option value="menos">Menos de un año</option>
+                                    <option value="mas">Más de un año</option>
+                                    <option value="nunca">Nunca a ido a revisión</option>
+                                    <option value="otrosmot">Otro motivo...</option>
+                                </select>
+                                <br>
+                            </div>
+
+                        </div>
+                        <div class="col-md-5">
+                            <div>
+                                <label for="motivo" class="form-label">¿Cual es el motivo de su visita?</label>
+                                <select class="form-select" name="" id="">
+                                    <option value="">Seleccionar</option>
+                                    <option value="revision">Revisión anual</option>
+                                    <option value="repentina">Perdida repentina</option>
+                                    <option value="antecedentes">Antecedentes familiares</option>
+                                    <option value="usuario">Usuario de equipos auditivos</option>
+                                    <option value="otros">Otro motivo...</option>
+                                </select>
+                                <br>
+                            </div>
+
+                        </div>
+
+
+                        <div class="row mb-3">
+                            <div class="col-md-4" style="border: 1px solid black; margin-right: 10px;">
+                                <label for="" class="form-label">¿Tiene sensación de oír menos?</label>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="sensacion" class="form-check-input" id="sensacion-si"
+                                        value="1">
+                                    <label for="sensacion-si" class="form-check-label">Si</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="sensacion" class="form-check-input" id="sensacion-no"
+                                        value="0">
+                                    <label for="sensacion-no" class="form-check-label">No</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="sensacion" class="form-check-input" id="sensacion-nolose"
+                                        value="2">
+                                    <label for="sensacion-nolose" class="form-check-label">No lo sé</label>
+                                </div>
+                            </div>
+                            <div class="col-md-5" style="border: 1px solid black">
+                                <label for="" class="form-label">¿Por qué oído le parece que oye más?</label>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="queoido" class="form-check-input" id="queoido-si"
+                                        value="1">
+                                    <label for="queoido-si" class="form-check-label">Derecho</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="queoido" class="form-check-input" id="queoido-no"
+                                        value="0">
+                                    <label for="queoido-no" class="form-check-label">Izquierdo</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="queoido" class="form-check-input" id="queoido-ambos"
+                                        value="2">
+                                    <label for="queoido-ambos" class="form-check-label">Ambos</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+
+                            <div class="col-md-4" style="border: 1px solid black; margin-right: 10px;">
+                                <label for="" class=" form-label">¿Tiene sensación de oír menos?</label>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="oirmenos" class="form-check-input" id="oirmenos-si"
+                                        value="1">
+                                    <label for="oirmenos-si" class="form-check-label">Si</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="oirmenos" class="form-check-input" id="oirmenos-no"
+                                        value="0">
+                                    <label for="oirmenos-no" class="form-check-label">No</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="oirmenos" class="form-check-input" id="oirmenos-nolose"
+                                        value="2">
+                                    <label for="oirmenos-nolose" class="form-check-label">No lo sé</label>
+                                </div>
+                            </div>
+                            <div class="col-md-5" style="border: 1px solid black">
+                                <label for="" class="form-label">¿Pone la TV o radio un poco más alto ?</label>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="tvradio" class="form-check-input" id="tvradio-si"
+                                        value="1">
+                                    <label for="tvradio-si" class="form-check-label">Si</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="tvradio" class="form-check-input" id="tvradio-no"
+                                        value="0">
+                                    <label for="tvradio-no" class="form-check-label">No</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-9" style="border: 1px solid black">
+                                <label for="" class="form-label">Los sonido tales como la voz de los nuños, la vos de
+                                    mujer, pájaros, teléfono, ¿le parece
+                                    que suenan más bajos?</label>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="mujerniños" class="form-check-input" id="mujerniños-si"
+                                        value="1">
+                                    <label for="mujerniños-si" class="form-check-label">Si</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="mujerniños" class="form-check-input" id="mujerniños-no"
+                                        value="0">
+                                    <label for="mujerniños-no" class="form-check-label">No</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="mujerniños" class="form-check-input" id="mujerniños-otros"
+                                        value="2">
+                                    <label for="mujerniños-no" class="form-check-label">Otros</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-9" style="border: 1px solid black">
+                                <label for="" class="form-label">En reuniones familiares y de amigos, ¿le cuesta seguir
+                                    la conversación y tienen que
+                                    repetirle las cosas? </label>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" nareuniones" class="form-check-input" id="reuniones-si"
+                                        value="1">
+                                    <label for="reuniones-si" class="form-check-label">Si</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="reuniones" class="form-check-input" id="reuniones-no"
+                                        value="1">
+                                    <label for="reuniones-si" class="form-check-label">No</label>
+                                </div>
+                                <br>
+                                <label for="motivo" class="form-label">¿Desde cuándo lo nota?</label>
+                                <select class="form-select" name="" id="">
+                                    <option value="">Seleccionar</option>
+                                    <option value="menosnota">Menos de un año</option>
+                                    <option value="masnota">Más de un año</option>
+
+                                </select>
+                                <br>
+
+                            </div>
+                        </div>
+                        <hr>
+                        <div>
+                            <h3>Acompañante</h3>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-9" style="border: 1px solid black; margin-right: 10px;">
+                                <label for="" class="form-label">¿Escucha la TV/radio al mismo nivel que el
+                                    suyo?</label><br>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="acotvradio" class="form-check-input" id="acotvradio-si"
+                                        value="1">
+                                    <label for="acotvradio-si" class="form-check-label">Si</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="acotvradio" class="form-check-input" id="acotvradio-no"
+                                        value="0">
+                                    <label for="acotvradio-no" class="form-check-label">No</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-9" style="border: 1px solid black; margin-right: 10px;">
+                                <label for="" class="form-label">¿Le cuesta seguir la conversación? </label><br>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="acoconversacion" class="form-check-input"
+                                        id="acoconversacion-si" value="1">
+                                    <label for="acoconversacion-si" class="form-check-label">Si</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="acoconversacion" class="form-check-input"
+                                        id="acoconversacion-no" value="0">
+                                    <label for="acoconversacion-no" class="form-check-label">No</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-9" style="border: 1px solid black; margin-right: 10px;">
+                                <label for="" class="form-label">¿Hay que repetirle las cosas siempre o a veces?
+                                </label><br>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="acorepetir" class="form-check-input" id="acorepetir-si"
+                                        value="1">
+                                    <label for="acorepetir-si" class="form-check-label">Si</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="acorepetir" class="form-check-input" id="acorepetir-no"
+                                        value="0">
+                                    <label for="acorepetir-no" class="form-check-label">No</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-9" style="border: 1px solid black; margin-right: 10px;">
+                                <label for="" class="form-label">¿Algunos ruidos le parecen muy altos? </label><br>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="acoaltos" class="form-check-input" id="acoaltos-si"
+                                        value="1">
+                                    <label for="acoaltos-si" class="form-check-label">Si</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="acoaltos" class="form-check-input" id="acoaltos-no"
+                                        value="0">
+                                    <label for="acoaltos-si" class="form-check-label">No</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="cuales" class="form-label">¿Cuales?</label>
+                                    <input type="text" class="form-control" id="cuales">
+                                </div>
+                                <br>
+
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-9" style="border: 1px solid black; margin-right: 10px;">
+                                <label for="" class="form-label">¿Ha ido en alguna ocasión al ORL? </label><br>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="acoorl" class="form-check-input" id="acoorl-si" value="1">
+                                    <label for="acoorl-si" class="form-check-label">Si</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="acoorl" class="form-check-input" id="acoorl-no" value="0">
+                                    <label for="acoorl-no" class="form-check-label">No</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="porque" class="form-label">¿Por qué fue?</label>
+                                    <input type="text" class="form-control" id="porque">
+                                </div>
+                                <br>
+
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-9" style="border: 1px solid black; margin-right: 10px;">
+                                <label for="" class="form-label">¿Tiene la sensación de que muchas veces oye pero no
+                                    entiende? </label><br>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="aconoentiende" class="form-check-input"
+                                        id="aconoentiende-si" value="1">
+                                    <lalabel for="aconoentiende-si" class="form-check-label">Si</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="aconoentiende" class="form-check-input"
+                                        id="aconoentiende-no" value="0">
+                                    <lalabel for="aconoentiende-no" class="form-check-label">No</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="aconoentiende" class="form-check-input"
+                                        id="aconoentiende-nolose" value="0">
+                                        <label for="aconoentiende-nolose" class="form-check-label">No lo sé</label>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-4">Generar PDF</button><br>
+
+                    <hr>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

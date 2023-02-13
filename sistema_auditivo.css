@@ -1,0 +1,130 @@
+.marco {
+    background: transparent;
+    min-width: max-content;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav{
+    display: flex;
+    left:auto;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 100px;
+
+    
+  }
+  .logo{
+  
+    width: 200px;
+    margin-left: 20px;
+  }
+  a{
+    color: red;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin-left: 50px;
+    text-decoration: none;
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .caja{
+    height:max-content;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    padding: 10px;
+  }
+  .sistemaAudi{
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 150px;
+    border: 1px solid red;
+    border-radius: 20px;
+  }
+  .perdidaAudi{
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 150px;
+    border: 1px solid red;
+    border-radius: 20px;
+  }
+  .afau {
+  
+    width: 100px;
+    float: right;
+    
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 15px 25px rgba(88, 88, 88, 0.5);
+    transition: .4s;
+    cursor: pointer;
+  }
+  .afau2 {
+  
+    width: 100px;
+    float: right;
+    margin-left: 10PX;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 15px 25px rgba(88, 88, 88, 0.5);
+    transition: .6s;
+    cursor: pointer;
+  }
+  .afau3 {
+  
+    width: 100px;
+    float: right;
+    margin-left: 10PX;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 15px 25px rgba(88, 88, 88, 0.5);
+    transition: .6s;
+    cursor: pointer;
+  }
+  .afau:hover{
+      transform: scale(1.05);
+  }
+  .afau2:hover{
+    transform: scale(1.05);
+  }
+  .afau3:hover{
+    transform: scale(1.05);
+  }
+  .tele{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    max-height:max-content;
+    
+  }
+  .sa{
+    margin-top: 10px;
+    width: 1000px;
+    border: 1px solid rgb(66, 64, 64);
+    border-radius: 10px;
+  }
+  button{
+    width: 10px;
+    float: right;
+    margin-left: 20PX;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 15px 25px rgba(88, 88, 88, 0.5);
+    transition: .6s;
+  }

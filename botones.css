@@ -1,0 +1,79 @@
+.caja1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background: rgb(224, 57, 57);
+  width: 130px;
+  height: 400px;
+  margin: 2px;
+}
+.caja2 {
+  position: absolute;
+  margin: 20px;
+  position: relative;
+}
+.caja3 {
+  position:absolute;
+  justify-content: center;
+  margin-top: 120px;
+  padding: 5px 5px;
+  width: 100px;
+  height: fit-content;
+  background: #4971a7;
+  border-radius: 10px;
+}
+
+img {
+  width: 90px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+label {
+  
+  display: flex;
+  justify-content: center;
+  height: 8px;
+  width: 80px;
+  align-items: center;
+  border: 1px solid lightgrey;
+  border-radius: 50px;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+.total {
+size: 10px;
+position:absolute;
+  background: green;
+  color: white;
+  color: green;
+  font-family: "Poppins", sans-serif;
+
+  border: 2px solid green;
+  border-radius: 5px;
+  padding: 10px 50px;
+}
+
+label::before {
+  content: "";
+  height: 10px;
+  width: 10px;
+  border: 3px solid green;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+input[type="radio"]:checked + label {
+  background: green;
+  color: white;
+}
+input[type="radio"]:checked + label::before {
+  height: 16px;
+  width: 16px;
+  border: 10px solid white;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/canales.css">
+    <title>CANALES</title>
+</head>
+
+<body>
+    <div class="nav">
+        <img class="logo" src="/assets/img/logo.png" alt="logo">
+        
+    </div>
+
+
+    <div class="caja">
+        <div class="sistemaAudi">
+            <button class="afau" onmousedown="sonido20.play()" >20 Canales</button>
+            <button class="afau" onmousedown="sonido12.play()" >12 Canales</button>
+            <button class="afau" onmousedown="sonido8.play()" >8 Canales</button>
+        </div>
+    </div>
+    <div class="contenedor">
+        <img id="lienzo" class="sistema" src="/assets/img/CANALES_AUDIO.png" alt="">
+    </div>
+    <script type="text/javascript">
+        var sonido8 = new Audio();
+        var sonido12 = new Audio();
+        var sonido20 = new Audio();
+
+        sonido8.src = "/8 canales.wav";
+        sonido12.src = "/12canales.wav"
+        sonido20.src = "/20canales.wav"
+        
+        </script>
+</body>
+
+</html>

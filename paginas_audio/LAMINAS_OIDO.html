@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/laminas.css">
+    <title>LAMINAS</title>
+</head>
+
+<body>
+    <div class="nav">
+        <img class="logo" src="/assets/img/logo.png" alt="logo">
+        
+    </div>
+
+
+    <div class="caja">
+        <div class="sistemaAudi">
+            <img id="laminaBAN" class="afau" src="/assets/img/LAMINA_BANANA.png">
+            <img id="laminaCRO" class="afau" src="/assets/img/LAMINA_CROS.png">
+            <img id="laminaBINA" class="afau" src="/assets/img/LAMINA_BINA.png">
+            <img id="laminaSA" class="afau" src="/assets/img/LAMINA_OIDO.png">
+
+        </div>
+    </div>
+    <div class="contenedor">
+        <img id="lienzo" class="sistema" src="/assets/img/VACIO.png" alt="">
+    </div>
+    <script>
+        let sa = document.getElementById("laminaSA");
+        let bina = document.getElementById("laminaBINA");
+        let cros = document.getElementById("laminaCRO");
+        let bana = document.getElementById("laminaBAN")
+        let imagen = document.getElementById("lienzo");
+        
+        sa.onclick = function(){
+          imagen.src = "/assets/img/LAMINA_OIDO.png";
+
+        }
+        bina.onclick = function(){
+          imagen.src = "/assets/img/LAMINA_BINA.png";
+
+        }
+        cros.onclick = function(){
+          imagen.src = "/assets/img/LAMINA_CROS.png";
+
+        }
+        bana.onclick = function(){
+          imagen.src = "/assets/img/LAMINA_BANANA.png";
+
+        }
+        
+        </script>
+</body>
+
+</html>

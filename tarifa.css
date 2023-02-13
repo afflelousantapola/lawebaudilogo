@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family:'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+.logotipo {
+  margin-top: 10px;
+  width: 300px;
+}
+.contenedor {
+  background: rgb(255, 255, 255);
+  margin-top: 20px;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+}
+.contenedor2 {
+  background: rgb(255, 255, 255);
+  margin-top: 20px;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+}
+.contenedor3 {
+  background: rgb(255, 255, 255);
+  margin-top: 20px;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+}
+.contenedor4{
+  cursor: pointer;
+  background: rgb(105, 81, 81);
+  margin-top: 20px;
+  margin-left: 10px;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+}
+.tarjeta1 {
+  position: relative;
+  justify-content: center;
+  background: rgb(255, 255, 255);
+  margin-left: 10px;
+  border: 1px solid red;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 15px 25px rgba(88, 88, 88, 0.5);
+}
+.tarjeta2 {
+  position: relative;
+  justify-content: center;
+  background: rgb(255, 255, 255);
+  margin-left: 10px;
+  border: 1px solid red;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 15px 25px rgba(88, 88, 88, 0.5);
+}
+
+
+
+
+.tarjetaequipo {
+  cursor: pointer;
+  margin-right: 10px;
+  height: max-content;
+  background: rgb(255, 255, 255);
+  border: 1px solid red;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 15px 25px rgba(88, 88, 88, 0.5);
+}
+.foto {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: rgb(255, 255, 255);
+}
+.model {
+  border-radius: 100%;
+  width: 90px;
+}
+h1 {
+  font-size: 20px;
+  text-align: center;
+}
+.cartel{
+  width: 200px;
+}
+.modelos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rebeccapurple;
+}
+.chec {
+  margin-right: 10px;
+}
+.cuenta {
+  margin-top: 20px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  
+  border: 1px solid red;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 15px 25px rgba(88, 88, 88, 0.5);
+}
+
+.numeral {
+  text-align: center;
+  color: rgb(209, 26, 26);
+  width: 150px;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 40px;
+}
+.mila{
+  font-size: 20px;
+  margin-left: 10px;
+}
+.milapiper{
+  font-size: 20px;
+  margin-left: 5px;
+}
+#nextyear{
+  width: 90px;
+  margin-left: 30px;
+}
